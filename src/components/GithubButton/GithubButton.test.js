@@ -1,14 +1,14 @@
 import React from "react";
 import { shallow } from "enzyme";
-import { findAttr } from '../../../../test/testUtils'
-import GithubRepo from './GithubRepo'
+import { findAttr } from '../../../test/testUtils'
+import GithubButton from './GithubButton'
 
 
-describe("GithubRepo Component", () => {
+describe("GithubButton Component", () => {
     let wrapper;
 
     beforeEach(() => {
-        wrapper = shallow(<GithubRepo />);
+        wrapper = shallow(<GithubButton />);
     });
 
     test('Renders without crashing', () => {

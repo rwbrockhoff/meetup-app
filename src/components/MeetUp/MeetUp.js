@@ -3,7 +3,7 @@ import './MeetUp.css';
 import EventInfo from './EventInfo/EventInfo'
 import Details from '../Details/Details'
 import RSVP from '../RSVP/RSVP'
-import GitHubRepo from './GithubRepo/GithubRepo'
+import GitHubButton from '../GithubButton/GithubButton'
 import { getDateString, filterWaitList, convertMilitaryTime, convertDurationTime } from './MeetUp.Logic'
 import axios from 'axios';
 import Loading from '../../assets/loading.svg'
@@ -44,7 +44,7 @@ export default class MeetUp extends Component {
                 return (
                     <React.Fragment >
                         <div className="meet-up-container" data-test="comp-meet-up">
-                            <GitHubRepo />
+                            <GitHubButton />
                             <div className="meet-up-left-panel">
                                 <p className="meet-up-left-panel-date">{`${date} ${startTime}`}</p>
                                 <h1>{name}</h1>

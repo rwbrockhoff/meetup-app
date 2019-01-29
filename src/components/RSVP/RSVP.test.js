@@ -36,4 +36,20 @@ describe("RSVP Component", () => {
         expect(() => wrapper.setState({ shortList: [{ name: 'test' }] })).toThrow()
     })
 
+    test('Should render correct member role', () => {
+        wrapper.setState({
+            shortList: [{
+                member: {
+                    id: 12345,
+                    name: 'johan',
+                    role: 'organizer',
+                    photo: { thumb: 'imglink' }
+                },
+                group: { urlname: 'reactjsurlname' }
+            },
+            ]
+        })
+        expect(wrapper.find('p.member-card-role').text()).toBe('organizer')
+    })
+
 })
