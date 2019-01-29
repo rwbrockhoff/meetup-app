@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './MeetUp.css';
 import EventInfo from './EventInfo/EventInfo'
-import Details from '../Details/Details'
+import Details from './Details/Details'
 import RSVP from '../RSVP/RSVP'
 import GitHubButton from '../GithubButton/GithubButton'
 import { getDateString, filterWaitList, convertMilitaryTime, convertDurationTime } from './MeetUp.Logic'
