@@ -1,0 +1,6 @@
+div.details-container {
+    height: fit-content;
+    box-sizing: border-box;
+    padding: 50px;
+    line-height: 200%;
+}

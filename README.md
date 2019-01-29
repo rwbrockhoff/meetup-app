@@ -1,68 +1,23 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+##Development
+Developed in React using Firebase, Jest, Enzyme and minimal tech debt. 
 
-## Available Scripts
+###Styling
+I enjoy using Sass, but it involves adding node-sass, and for me, setting up mixins. On a larger scale project, I might use Sass, incorporate MaterialUI, styled components, or whatever the codebase is already using.
 
-In the project directory, you can run:
+###Endpoints
+Hitting the API, it considers waitlist members as "yes" members. I did not find any documentation on limiting the amount of members I could grab at a time to lessen the response payload. However, the members are filtered to only display members who are going, and to display the organizer first. 
 
-### `npm start`
+###Potential Next Steps
+Optionally, the comments v3 endpoint could have been used to render comments below the attendees. I wanted to stick exactly to the endpoints requested. The API was well documented (and has a console), so I really enjoyed working with it. 
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+###Image Optimization
+Images assets are saved as small SVG files, except for the FontAwesome CDN. Optionally, I could save the FontAwesome Icons as SVGs as well. 
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+###Testing
+There is a Postman Collection file included in the repo, and a code coverage report below. 
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+## Links
+[Live App](https://ryanbrockhoff.com)
+[Code Coverage](https://i.ibb.co/nmfLZcH/code-coverage.png)
+[My Portfolio](https://www.ryanbrockhoff.com)

@@ -1,0 +1,29 @@
+div.github-repo-container {
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+    position: fixed;
+    top: 25px;
+    right: 25px;
+    z-index: 2;
+    background: white;
+    color: gray;
+    border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 34px -5px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 0px 34px -5px rgba(0,0,0,0.2);
+    box-shadow: 0px 0px 34px -5px rgba(0,0,0,0.2);
+    transition: all 100ms ease-in-out;
+}
+
+div.github-repo-container:hover {
+    cursor: pointer;
+    color: black;-webkit-box-shadow: 0px 0px 34px -5px rgba(0,0,0,0.3);
+    -moz-box-shadow: 0px 0px 34px -5px rgba(0,0,0,0.3);
+    box-shadow: 0px 0px 34px -5px rgba(0,0,0,0.3);
+}
+
+@media (max-width: 576px) { 
+    div.github-repo-container {
+        top: 90%;
+    }
+}

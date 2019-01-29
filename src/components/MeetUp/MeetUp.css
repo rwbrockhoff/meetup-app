@@ -1,0 +1,99 @@
+div.meet-up-container {
+    width: 100vw;
+    box-sizing: border-box;
+    height: 250px;
+    background: linear-gradient(#f13a59, #be2a42);
+    color: white;
+    padding: 30px 50px;
+    position: relative;
+    display: grid;
+    grid-template-columns: 80% 20%;
+    animation: fadeIn 200ms ease-in;
+}
+
+div.meet-up-left-panel {
+    grid-column: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+p.meet-up-left-panel-date {
+    font-size: 1.2em;
+}
+
+div.event-body {
+    width: 100%;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 60% 40%;
+}
+
+div.event-body-left-panel {
+    grid-column: 1;
+}
+
+div.event-body-right-panel {
+    grid-column: 2;
+}
+
+div.event-body-right-panel-container {
+    width: 90%;
+    height: fit-content;
+    min-height: 200px;
+    padding: 10px;
+    margin-top: 40px;
+    box-sizing: border-box;
+    background: #f3f3f3;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: slideUp 200ms cubic-bezier(.17,.67,.83,.67);
+}
+
+div.event-body a {
+    color: #00a2c7;
+}
+
+h3 {
+    font-weight: bold;
+    margin: 5px 0px;
+}
+
+img.loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+@keyframes slideUp {
+    from {transform: translateY(20%)}
+    to {transform: translateY(0%)}
+}
+
+@media (max-width: 576px) { 
+    div.event-body {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+    }
+
+    div.event-body-right-panel-container {
+            margin-top: 0px;
+            width: 100%;
+            padding: 20px 10px;
+            padding-bottom: 100px;
+    } 
+
+    p.meet-up-left-panel-date {
+        line-height: 150%;
+    }
+}

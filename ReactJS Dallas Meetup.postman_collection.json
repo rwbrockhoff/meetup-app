@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "882e8c9a-7a9a-4eda-b426-84c5d09a675c",
+		"name": "ReactJS Dallas Meetup",
+		"description": "Endpoint testing for ReactJS Dallas Meetup.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET: Event",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://api.meetup.com/reactjs-dallas/events?sign=true&photo-host=public&page=1",
+					"protocol": "https",
+					"host": [
+						"api",
+						"meetup",
+						"com"
+					],
+					"path": [
+						"reactjs-dallas",
+						"events"
+					],
+					"query": [
+						{
+							"key": "sign",
+							"value": "true"
+						},
+						{
+							"key": "photo-host",
+							"value": "public"
+						},
+						{
+							"key": "page",
+							"value": "1"
+						}
+					]
+				},
+				"description": "Get event info JSON. "
+			},
+			"response": []
+		},
+		{
+			"name": "GET: Rsvp",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://api.meetup.com/reactjs-dallas/events/pbbdwnyzdbqb/rsvps?sign=true&photo-host=public",
+					"protocol": "https",
+					"host": [
+						"api",
+						"meetup",
+						"com"
+					],
+					"path": [
+						"reactjs-dallas",
+						"events",
+						"pbbdwnyzdbqb",
+						"rsvps"
+					],
+					"query": [
+						{
+							"key": "sign",
+							"value": "true"
+						},
+						{
+							"key": "photo-host",
+							"value": "public"
+						},
+						{
+							"key": null,
+							"value": null
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

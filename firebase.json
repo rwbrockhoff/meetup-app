@@ -1,0 +1,20 @@
+{
+  "functions": {},
+  "hosting": {
+    "public": "build",
+    "ignore": [
+      "firebase.json",
+      "src/setupProxy.js",
+      "**/.*",
+      "**/node_modules/**",
+      "**/coverage/**",
+      "jest.config.js"
+    ],
+    "rewrites": [
+      {
+        "source": "/api/get-meetup-info",
+        "function": "app"
+      }
+    ]
+  }
+}
